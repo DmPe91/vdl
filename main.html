@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <div class="header">
+          <div class="header-blocks container col-xl-12">
+            <div class="header-block">
+              <button class="version-site">ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ</button>
+            </div>
+            <div class="header-block">
+              <div class="contact-number">
+                <a href="#">+7 (47465) 6-50-64</a>
+              </div>
+              <form action="">
+                <input
+                  type="text"
+                  class="search"
+                  placeholder="Поиск по сайту"
+                />
+              </form>
+            </div>
+            <div class="header-block">
+              <a href="indications.html"
+                ><button
+                  class="button btn-green"
+                  style="margin-right: 1.8rem; font-weight: 600"
+                >
+                  Передать показания
+                </button></a
+              >
+              <a href="#"
+                ><button class="button btn-white" style="font-weight: 400">
+                  Личный кабинет
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container col-xl-12 row">
+          <div class="col-2">
+            <div class="logo">
+              <a href="#"><img src="img/logo.svg" /></a>
+            </div>
+          </div>
+          <div class="col-10">
+            <nav>
+              <ul>
+                <li class="dropdown-trigger">
+                  АБОНЕНТАМ
+                  <div class="dropdown-menu">
+                    <span class="triangle"></span>
+                    <ul class="dropdown-menu__box">
+                      <li><a href="disconnection.html">Отключения</a></li>
+                      <li>
+                        <a href="calculator.html"
+                          >Калькулятор расчета подключения</a
+                        >
+                      </li>
+                      <li><a href="tarifs.html">Тарифы</a></li>
+                      <li><a href="tarif.html"> Частные лица</a></li>
+                      <li><a href="tarif.html">Юридические лица</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropdown-trigger">
+                  О ВОДОКАНАЛЕ
+                  <div class="dropdown-menu">
+                    <span class="triangle"></span>
+                    <ul class="dropdown-menu__box">
+                      <li>История компании</li>
+                      <li>Руководство</li>
+                      <li>Раскрытие информации</li>
+                    </ul>
+                  </div>
+                </li>
+                <a href="connection.html"><li>ПОДКЛЮЧЕНИЕ К СЕТЯМ</li></a>
+                <a href="news.html"><li>НОВОСТИ</li></a>
+                <a href="contacts.html"><li>КОНТАКТЫ</li></a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="mobile-block">
+          <div class="mobile-header">
+            <div class="mobile-logo">
+              <img src="img/logo-mobile-header.png" />
+            </div>
+            <button class="mobile-button btn-green">Передать показания</button>
+            <div class="mobile-btn__menu" id="js-trigger-mobile-menu">
+              <img src="img/menu-mobile.png" />
+              <img src="img/menu-mobile.png" />
+              <img src="img/menu-mobile.png" />
+            </div>
+          </div>
+          <div class="mobile-dropdown__menu" id="js-mobile-menu">
+            <div class="mobile-menu__list">
+              <nav>
+                <ul>
+                  <li
+                    style="
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      margin-bottom: 18px;
+                      font-size: 14px;
+                    "
+                  >
+                    АБОНЕНТАМ
+                  </li>
+                  <a href="disconnection.html"><li>Отключения</li></a>
+                  <a href="connection.html"
+                    ><li style="width: 289px">
+                      Подключение к системам водоснабжения и водоотведения
+                    </li></a
+                  >
+                  <a href="calculator.html"
+                    ><li>Калькулятор расчета подключения</li></a
+                  >
+                  <a href="tarifs.html"><li>Тарифы</li></a>
+                  <a href="tarif.html"><li>Частные лица</li></a>
+                  <a href="tarif.html"><li>Юридические лица</li></a>
+                </ul>
+                <ul>
+                  <li
+                    style="
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      margin-bottom: 18px;
+                      font-size: 14px;
+                      padding-top: 12px;
+                    "
+                  >
+                    О ВОДОКАНАЛЕ
+                  </li>
+                  <a href="company.html"><li>История компании</li></a>
+                  <a href="company.html"><li>Руководство</li></a>
+                  <a href="information.html"><li>Раскрытие информации</li></a>
+                  <a href="#"><li>Личный кабинет</li></a>
+                  <a href="news.html"><li>Новости</li></a>
+                  <a href="contacts.html"><li>Контакты</li></a>
+                  <a href="indications.html"><li>Передать показания</li></a>
+                </ul>
+                <ul>
+                  <a href="#"
+                    ><li class="contact-number__mobile">
+                      +7 (47465) 6-50-64
+                    </li></a
+                  >
+                  <li style="font-size: 14px; padding-bottom: 20px">
+                    Почта: <a href="#">dankov@rkvv.ru</a>
+                  </li>
+                  <li>МУП “Данковский водоканал”</li>
+                  <li style="width: 282px">
+                    398510, Липецкая область, Данковский район, г. Данков, ул.
+                    Коммунальная, д. 21а
+                  </li>
+                  <li style="padding-top: 12px; color: #66666680">
+                    Все права защищены 2024
+                  </li>
+                  <a href="#" style="color: #66666680"
+                    ><li>Политика конфиденциальности</li></a
+                  >
+                </ul>
+              </nav>
+            </div>
+            <div class="logo-author__mobile-menu">
+              <p class="small-text" style="margin-right: 10px">Сделано в</p>
+              <a href="#"><img src="img/copyright-w.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <section>
+          <div class="swiper-banner" style="background: #fdfdfd">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="banner-wrapper"
+                  style="
+                    background: url(img/waves.svg) 0% 20% no-repeat,
+                      url(img/banner-img.png) top right no-repeat, #fdfdfd;
+                  "
+                >
+                  <div class="container col-xl-12 banner-block">
+                    <h1>
+                      МЫ ОБЕСПЕЧИВАЕМ ЖИТЕЛЕЙ ДАНКОВСКОГО РАЙОНА ЧИСТОЙ ПИТЬЕВОЙ
+                      ВОДОЙ
+                    </h1>
+                    <p class="tittle">
+                      Мы бережно относимся к окружающей среде и используем
+                      современные технологии для очистки воды
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="banner-wrapper"
+                  style="
+                    background: url(img/waves.svg) 0% 20% no-repeat,
+                      url(img/banner-img.png) top right no-repeat, #fdfdfd;
+                  "
+                >
+                  <div class="container col-xl-12 banner-block">
+                    <h1>
+                      МЫ ОБЕСПЕЧИВАЕМ ЖИТЕЛЕЙ ДАНКОВСКОГО РАЙОНА ЧИСТОЙ ПИТЬЕВОЙ
+                      ВОДОЙ
+                    </h1>
+                    <p class="tittle">
+                      Мы бережно относимся к окружающей среде и используем
+                      современные технологии для очистки воды
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section>
+          <div
+            class="wrapper-background"
+            style="background: url(img/waves.svg) 100% 80% no-repeat, #fdfdfd"
+          >
+            <div class="container col-xl-12 tabs">
+              <div class="tab-block" style="padding: 23px 76px 51px 76px">
+                <div class="tab-icon">
+                  <img src="img/icon.svg" />
+                </div>
+                <h4>Личный кабинет</h4>
+                <p>
+                  Инфорамция о начислениях, история платежей, передача
+                  показаний, оплата ЖКУ
+                </p>
+                <div class="btn-tab">
+                  <a href="#"><button class="btn-white">Войти</button></a>
+                </div>
+              </div>
+              <div class="tab-block" style="padding: 23px 44px 51px 44px">
+                <div class="tab-icon">
+                  <img src="img/icon (1).svg" />
+                </div>
+                <h4>Передать показания</h4>
+                <p>Своевременно передать сведения о потреблении услуг</p>
+                <div class="btn-tab" style="margin-top: 32px">
+                  <a href="indications.html"
+                    ><button class="btn-blue" style="margin-right: 10px">
+                      Юридические лица
+                    </button></a
+                  >
+                  <a href="indications.html"
+                    ><button class="btn-white">Частные лица</button></a
+                  >
+                </div>
+              </div>
+              <div class="tab-block" style="padding: 23px 76px 51px 76px">
+                <div class="tab-icon">
+                  <img src="img/icon(2).svg" />
+                </div>
+                <h4>Отключения</h4>
+                <p>Информация об отключениях водоснабжения</p>
+                <div class="btn-tab" style="margin-top: 32px">
+                  <a href="disconnection.html"
+                    ><button class="btn-white">Подробнее</button></a
+                  >
+                </div>
+              </div>
+              <div class="tab-block" style="padding: 23px 76px 51px 76px">
+                <div class="tab-icon">
+                  <img src="img/icon(3).svg" />
+                </div>
+                <h4>Подключиться</h4>
+                <p>Подключение к системам водоснабжения и водоотведения</p>
+                <div class="btn-tab" style="margin-top: 32px">
+                  <a href="connection.html"
+                    ><button class="btn-blue">Подключиться</button></a
+                  >
+                </div>
+              </div>
+              <div class="tab-block" style="padding: 23px 76px 51px 76px">
+                <div class="tab-icon">
+                  <img src="img/icon(4).svg" />
+                </div>
+                <h4>Новости</h4>
+                <p>Последние новости, новости компании, контакты для СМИ</p>
+                <div class="btn-tab" style="margin-top: 32px">
+                  <a href="news.html"
+                    ><button class="btn-white">Читать новости</button></a
+                  >
+                </div>
+              </div>
+              <div class="tab-block" style="padding: 23px 76px 51px 76px">
+                <div class="tab-icon">
+                  <img src="img/icon(5).svg" />
+                </div>
+                <h4>Сообщить об открытом люке</h4>
+                <p>Оповещение об открытых люках</p>
+                <div class="btn-tab" style="margin-top: 32px">
+                  <a href="report.html"
+                    ><button class="btn-white">Сообщить</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrapper-background" style="background: #f4f6fa">
+            <div class="container col-xl-12 news">
+              <h2>Новости</h2>
+              <div class="news-blocks">
+                <a href="news_one.html"
+                  ><div class="news-block">
+                    <div class="news-img">
+                      <img src="img/new.png" />
+                    </div>
+                    <div class="news-info">
+                      <span class="news-date">12.03.2023</span>
+                      <h4>Наш водоканал</h4>
+                      <p>
+                        В целом, конечно, граница обучения кадров представляет
+                        собой интересный эксперимент проверки благоприятных
+                        перспектив...
+                      </p>
+                      <div class="news-btn">
+                        <div class="arrow-news"></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="news_one.html">
+                  <div class="news-block">
+                    <div class="news-img">
+                      <img src="img/new1.png" />
+                    </div>
+                    <div class="news-info">
+                      <span class="news-date">12.10.2023</span>
+                      <h4>Сеть водоснабжения</h4>
+                      <p>
+                        В целом, конечно, граница обучения кадров представляет
+                        собой интересный эксперимент проверки благоприятных
+                        перспектив...
+                      </p>
+                      <div class="news-btn">
+                        <div class="arrow-news"></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="news_one.html">
+                  <div class="news-block">
+                    <div class="news-img">
+                      <img src="img/new2.png" />
+                    </div>
+                    <div class="news-info">
+                      <span class="news-date">17.05.2024</span>
+                      <h4>Уважаемые жители г. Данков!</h4>
+                      <p>
+                        В целом, конечно, граница обучения кадров представляет
+                        собой интересный эксперимент проверки благоприятных
+                        перспектив...
+                      </p>
+                      <div class="news-btn">
+                        <div class="arrow-news"></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a href="news.html"
+                ><button class="btn-blue">Смотреть все</button></a
+              >
+            </div>
+          </div>
+        </section>
+        <section>
+          <div
+            class="wrapper-background"
+            style="background: url(img/waves.svg) 0% 20% no-repeat, #fdfdfd"
+          >
+            <div class="container col-xl-12 partners">
+              <h3>Мы сотрудничаем</h3>
+              <div class="swiper-container">
+                <div class="swiper-btn__prev desktop-slider-btn"></div>
+                <div class="swiper-partners">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="partner">
+                          <div class="partner-img">
+                            <img src="img/partner.png" />
+                          </div>
+                          <p>Администрация Данковского района</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="partner">
+                          <div class="partner-img">
+                            <img src="img/partner(1).png" />
+                          </div>
+                          <p>Управление ЖКХ Липецкой области</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="partner">
+                          <div class="partner-img">
+                            <img src="img/partner(2).png" />
+                          </div>
+                          <p>
+                            Управление экологии и природных ресурсов Липецкой
+                            области
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="partner">
+                          <div class="partner-img">
+                            <img src="img/partner(3).png" />
+                          </div>
+                          <p>Портал государственных услуг РФ</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="partner">
+                          <div class="partner-img">
+                            <img src="img/partner.png" />
+                          </div>
+                          <p>Администрация Данковского района</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-btn__next desktop-slider-btn"></div>
+                <div class="swiper-btn-mobile">
+                  <div class="swiper-btn__prev"></div>
+                  <div class="swiper-btn__next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div
+            class="wrapper-background"
+            style="background: url(img/q-fon.svg) right top no-repeat, #f4f6fa"
+          >
+            <div class="container col-xl-12 questions">
+              <h3>Вопрос-ответ</h3>
+              <div class="questions-blocks">
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Где можно проверить прибор учета расхода воды (счетчик)?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Какого диаметра нужно установить прибор учета расхода
+                      воды?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Обязательно ли устанавливать общедомовые приборы учета
+                      (ОПУ)?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Почему жители должны платить за соседей, не
+                      зарегистрированных по месту проживания?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Как будет рассчитываться ОДН, если соседи водой
+                      пользуются, а показания не передают?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-block js-question-trigger">
+                  <div class="question">
+                    <p>
+                      Как рассчитывается поливаемая площадь и какова
+                      продолжительность поливочного сезона?
+                    </p>
+                    <div class="question-icon">
+                      <img src="img/question.svg" class="js-icon" />
+                    </div>
+                  </div>
+                  <div class="answer js-answer">
+                    <p>
+                      Выполнение работ по метрологической поверке квартирных
+                      счетчиков воды производится органами Госстандарта РФ или
+                      организациями, метрологическая служба которых
+                      аккредитована Госстандартом РФ на право проведения
+                      поверок.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container col-xl-12 application-main">
+            <div class="application-block">
+              <h4>Остались вопросы?</h4>
+              <p>Оставьте заявку на обратный звонок с нашим специалистом</p>
+              <div class="application-btn">
+                <div
+                  class="personal-btn a-btn__active"
+                  id="js-pesronal-trigger"
+                  style="margin-right: 10px"
+                >
+                  Частные лица
+                </div>
+                <div class="legal-btn" id="js-legal-trigger">
+                  Юридические лица
+                </div>
+              </div>
+              <form id="personal-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                  class="a-name"
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                  class="a-tel js-tel-input"
+                />
+                <input
+                  type="textarea"
+                  name="message"
+                  placeholder="Сообщение"
+                  class="a-message"
+                />
+                <button
+                  class="btn-blue js-btn-modal-application"
+                  type="submit"
+                  style="height: 3.4rem"
+                >
+                  ОТПРАВИТЬ
+                </button>
+              </form>
+              <form id="legal-form" class="js-form_non-active">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                  class="a-name"
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон"
+                  class="a-tel js-tel-input"
+                />
+                <input
+                  type="textarea"
+                  name="message"
+                  placeholder="Сообщение"
+                  class="a-message"
+                />
+                <button
+                  class="btn-blue js-btn-modal-application"
+                  style="height: 3.4rem"
+                >
+                  ОТПРАВИТЬ
+                </button>
+              </form>
+              <span
+                >Нажав на кнопку, я даю согласие на обработку персональных
+                данных</span
+              >
+            </div>
+            <div class="application-img">
+              <img src="img/application.png" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="footer-block">
+          <div class="container col-xl-12">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="img/footer-logo.svg" />
+              </a>
+              <div class="mobile-footer-contacts">
+                <ul>
+                  <a href="#"
+                    ><li
+                      class="contact-number__mobile"
+                      style="font-size: 16px; margin-bottom: 15px"
+                    >
+                      +7 (47465) 6-50-64
+                    </li></a
+                  >
+                  <li style="font-size: 14px; color: white">
+                    Почта: <a href="#">dankov@rkvv.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-elements">
+              <div class="footer-element">
+                <ul>
+                  <li class="footer-list__tittle">АБОНЕНТАМ</li>
+                  <li><a href="disconnection.html">Отключения</a></li>
+                  <li><a href="connection.html">Подключение к системам</a></li>
+                  <li>
+                    <a href="connection.html">водоснабжения и водоотведения</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-element">
+                <ul>
+                  <li>
+                    <a href="calculator.html"
+                      >Калькулятор расчета подключения</a
+                    >
+                  </li>
+                  <li><a href="tarifs.html">Тарифы</a></li>
+                  <li><a href="tarif.html">Частные лица</a></li>
+                  <li><a href="tarifs.html">Юридические лица</a></li>
+                </ul>
+              </div>
+              <div class="footer-element">
+                <ul>
+                  <li class="footer-list__tittle">О ВОДОКАНАЛЕ</li>
+                  <li><a href="company.html">История компании</a></li>
+                  <li><a href="company.html">Руководство</a></li>
+                  <li><a href="information.html">Раскрытие информации</a></li>
+                </ul>
+              </div>
+              <div class="footer-element">
+                <ul>
+                  <li><a href="#">Личный кабинет</a></li>
+                  <li><a href="news.html">Новости</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                  <li><a href="indications.html">Передать показания</a></li>
+                </ul>
+              </div>
+              <div class="footer-element__contacts">
+                <ul>
+                  <li><a href="#">МУП “Данковский водоканал”</a></li>
+                  <li>
+                    <a href="#"
+                      >398510, Липецкая область, Данковский район, г. Данков,
+                      ул. Коммунальная, д. 21а</a
+                    >
+                  </li>
+                  <li class="footer-mail"><a href="#">dankov@rkvv.ru</a></li>
+                  <li class="footer-contact-number">
+                    <a href="#">+7 (47465) 6-50-64</a>
+                  </li>
+                  <li class="mobile-footer__el">Все права защищены 2024</li>
+                  <li class="mobile-footer__el">
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container col-xl-12">
+          <div class="footer-block__author">
+            <div class="copyrights mobile-copyrights">
+              Все права защищены 2024
+            </div>
+            <div class="small-text mobile-political">
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="logo-author">
+              <p class="small-text">Сделано в</p>
+              <a href="#"><img src="img/copyright-w.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div id="js-modal_application" class="modal fade">
+          <div class="modal-dialog modal-dialog-centered md-notification">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="modal-notification__text">
+                  <h2>Заявка успешно отправлена!</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/style.js"></script>
+</html>
